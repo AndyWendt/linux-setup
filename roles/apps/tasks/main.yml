@@ -12,3 +12,6 @@
     - libssl-dev
     - libcurl4-openssl-dev
     - libbz2-dev
+    - libmcrypt-dev 
+    - libreadline-dev
+    - libtidy-dev
