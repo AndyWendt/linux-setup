@@ -1,4 +1,4 @@
-# Mac Setup
+# Linux Setup
 
 Installs a default set of preferences and tools
 
