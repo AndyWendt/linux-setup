@@ -1,0 +1,14 @@
+---
+
+- name: install apps
+  app:
+    name: "{{ item }}"
+    state: present
+  register: apps_installed
+  loop:
+    - mcrypt
+    - libjpeg-dev
+    - re2c
+    - libssl-dev
+    - libcurl4-openssl-dev
+    - libbz2-dev
