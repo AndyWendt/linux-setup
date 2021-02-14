@@ -10,8 +10,14 @@
     - htop
     - jq
     - gdebi
+    - gulp
+    - npm
 
 - name: Install snaps
+  become: yes
+  become_method: sudo
   community.general.snap:
-    name:
-      - authy
+    name: authy
+    channel: beta
+    name: mysql-workbench-community
+

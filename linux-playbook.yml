@@ -6,4 +6,4 @@
     - { role: docker, tags: ["ci"] }
     - { role: git_config, tags: ["ci"] }
     - { role: php, tags: ["dev"] }
-    - { role: "geerlingguy.composer", tags: "composer" }
+   #    - { role: "geerlingguy.composer", tags: "composer" }

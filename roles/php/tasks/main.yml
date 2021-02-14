@@ -13,3 +13,4 @@
       - php7.4-curl
       - php7.4-dom
       - php7.4-zip
+      - php7.4-mysql
