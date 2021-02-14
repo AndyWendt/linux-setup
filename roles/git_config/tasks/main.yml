@@ -11,10 +11,10 @@
   git_config:
     name: user.name
     scope: global
-    value: "{{ full_name }}"
+    value: "Andy Wendt"
 
 - name: Set git user.email
   git_config:
     name: user.email
     scope: global
-    value: "{{ email }}"
+    value: "andy@awendt.com"
