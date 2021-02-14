@@ -3,3 +3,4 @@
 - hosts: localhost
   roles:
     - { role: apps, tags: ["apps"] }
+    - { role: docker, tags: ["ci"] }
