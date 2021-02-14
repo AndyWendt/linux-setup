@@ -9,4 +9,9 @@
     - tmux
     - htop
     - jq
-    
+    - gdebi
+
+- name: Install snaps
+  community.general.snap:
+    name:
+      - authy
