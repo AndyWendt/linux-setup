@@ -1,5 +1,14 @@
 ---
 
 - hosts: localhost
+  vars_prompt:
+    - name: full_name
+      prompt: "Full name:"
+      private: no
+
+    - name: email
+      prompt: "Email:"
+      private: no
+
   roles:
     - { role: apps, tags: ["apps"] }

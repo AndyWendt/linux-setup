@@ -1,17 +1,11 @@
 ---
 
-- name: install apps
-  app:
-    name: "{{ item }}"
-    state: present
-  register: apps_installed
-  loop:
-    - mcrypt
-    - libjpeg-dev
-    - re2c
-    - libssl-dev
-    - libcurl4-openssl-dev
-    - libbz2-dev
-    - libmcrypt-dev 
-    - libreadline-dev
-    - libtidy-dev
+- name: Installing Common Apt packages
+  become: yes
+  become_method: sudo
+  apt:
+    pkg:
+    - vim
+    - tmux
+    - htop
+    - jq
