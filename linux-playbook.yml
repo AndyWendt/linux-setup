@@ -5,3 +5,4 @@
     - { role: apps, tags: ["apps"] }
     - { role: docker, tags: ["ci"] }
     - { role: git_config, tags: ["ci"] }
+    - { role: php, tags: ["dev"] }
