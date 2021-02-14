@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# install ansible ppa
-sudo apt-add-repository ppa:ansible/ansible -y
-
 # install stuff
 sudo apt update
-sudo apt install -y ansible dialog
+sudo apt install -y python3-pip dialog
+pip3 install ansible
 
 ansible-galaxy collection install community.general
 

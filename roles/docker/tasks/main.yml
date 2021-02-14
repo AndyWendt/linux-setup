@@ -58,8 +58,8 @@
     get_url:
       url: "https://github.com/docker/compose/releases/download/{{ compose_version }}/docker-compose-Linux-x86_64"
       dest: "{{ compose_path }}"
-      owner: root
-      group: root
+      owner: andy
+      group: andy
       mode: +x
 
   - name: Check if docker-credential-helper is installed
@@ -81,7 +81,11 @@
       remote_src: yes
       dest: /usr/local/bin
       mode: +x
+      owner: andy
+      group: andy
 
 - name: "Remember to add docker group to users!"
   debug:
-    msg: Remember to add docker groups to users with "usermod -aG docker <username>". Use "newgrp docker" to use the group immediately
+    msg: Remember to add docker groups to users with "sudo groupadd docker && sudo usermod -aG docker $USER". Use "newgrp docker" to use the group immediately
+
+ 
