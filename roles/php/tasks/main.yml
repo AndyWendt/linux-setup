@@ -1,9 +1,15 @@
 ---
 
-- name: Installing Common Apt packages
+- name: Installing PHP Apt packages
   become: yes
   become_method: sudo
   apt:
     pkg:
       - php7.4
-    
+      - curl
+      - php7.4-cli
+      - php7.4-mbstring
+      - unzip
+      - php7.4-curl
+      - php7.4-dom
+      - php7.4-zip
